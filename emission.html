@@ -18,7 +18,7 @@
 </div>
 <script>
     d3.csv("data/table1.csv", function(CityData) {
-        var svg = dimple.newSvg("#chartContainer", 800, 500); // Adjusted height for better layout
+        var svg = dimple.newSvg("#chartContainer",800, 500); // Adjusted height for better layout
         var chartdata = [];
 
         CityData.forEach(function(entry) {
@@ -49,7 +49,7 @@
                 myChart.assignColor(style, colors[index % colors.length]);
             });
 
-        myChart.addLegend(100, 10, 630, 60, "right"); // Adjusted legend position to be below the chart area
+        myChart.addLegend(480, 3, 430, 60, "left"); // Adjusted legend position to be below the chart area
         myChart.draw(500);
     });
 </script>
